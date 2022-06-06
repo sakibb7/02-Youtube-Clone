@@ -1,0 +1,299 @@
+body {
+  margin: 0;
+  font-family: 'roboto', arial;
+  padding-top: 80px;
+  padding-left: 150px;
+  background-color: #f4f4f4;
+}
+
+p {
+  font-family: Roboto, Arial;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.header {
+  height: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: white;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.left-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.left-section .hamburger-menu {
+  height: 24px;
+  margin-left: 24px;
+  margin-right: 24px;
+  cursor: pointer;
+}
+
+.left-section .youtube-logo {
+  height: 20px;
+  cursor: pointer;
+}
+
+.middle-section {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-left: 70px;
+  margin-right: 35px;
+  max-width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.middle-section .search-bar {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 36px;
+  padding-left: 10px;
+  font-size: 16px;
+  border: 1px solid silver;
+  border-radius: 2px;
+  -webkit-box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+  width: 0;
+}
+
+.middle-section .search-bar::-webkit-input-placeholder {
+  font-family: Roboto, Arial;
+  font-size: 16px;
+}
+
+.middle-section .search-bar:-ms-input-placeholder {
+  font-family: Roboto, Arial;
+  font-size: 16px;
+}
+
+.middle-section .search-bar::-ms-input-placeholder {
+  font-family: Roboto, Arial;
+  font-size: 16px;
+}
+
+.middle-section .search-bar::placeholder {
+  font-family: Roboto, Arial;
+  font-size: 16px;
+}
+
+.middle-section .search-button {
+  height: 40px;
+  width: 40px;
+  background-color: #f0f0f0;
+  border: 1px solid silver;
+  margin-left: -1px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.middle-section .search-button .search-icon {
+  height: 24px;
+  margin-top: 4px;
+}
+
+.middle-section .voice-search-button {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+
+.middle-section .voice-search-button .voice-search-icon {
+  height: 25px;
+  margin-top: 4px;
+}
+
+.right-section {
+  width: 180px;
+  margin-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.right-section .create-icon {
+  height: 24px;
+  cursor: pointer;
+}
+
+.right-section .apps-icon {
+  height: 24px;
+  cursor: pointer;
+}
+
+.right-section .notification-icon-container {
+  position: relative;
+}
+
+.right-section .notification-icon-container .notification-icon {
+  height: 24px;
+}
+
+.right-section .notification-icon-container .notification-count {
+  position: absolute;
+  top: -2px;
+  right: -5px;
+  background-color: #c80000;
+  color: white;
+  font-family: Roboto, Arial;
+  font-size: 11px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.right-section .current-user-pic {
+  height: 32px;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.video-grid {
+  padding-left: 10px;
+  padding-right: 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -webkit-column-gap: 16px;
+          column-gap: 16px;
+  row-gap: 40px;
+}
+
+.video-grid .video-preview .thumbnail-row {
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.video-grid .video-preview .thumbnail-row .thumbnail {
+  width: 100%;
+}
+
+.video-grid .video-preview .thumbnail-row .video-time {
+  font-family: Roboto, Arial;
+  font-size: 12px;
+  font-weight: 500;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 2px;
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 8px;
+  right: 5px;
+}
+
+.video-grid .video-preview .video-info-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50px 1fr;
+      grid-template-columns: 50px 1fr;
+}
+
+.video-grid .video-preview .video-info-grid .channel-picture .profile-picture {
+  width: 35px;
+  border-radius: 50px;
+}
+
+.video-grid .video-preview .video-info-grid .video-info .video-title {
+  margin-top: 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 12px;
+}
+
+.video-grid .video-preview .video-info-grid .video-info .video-author {
+  font-size: 12px;
+  color: #606060;
+  margin-bottom: 4px;
+}
+
+.video-grid .video-preview .video-info-grid .video-info .video-stats {
+  font-size: 12px;
+  color: #606060;
+}
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 55px;
+  background-color: white;
+  width: 140px;
+  z-index: 200;
+  padding-right: 10px;
+  padding-top: 20px;
+}
+
+.sidebar .sidebar-link {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 15px;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.sidebar .sidebar-link img {
+  height: 24px;
+  padding-right: 10px;
+}
+
+.sidebar .sidebar-link div {
+  font-family: 'roboto', arial;
+  font-size: 12px;
+}
+
+.sidebar .sidebar-link:hover {
+  background-color: #ececec;
+}
+/*# sourceMappingURL=main.css.map */
