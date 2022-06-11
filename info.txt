@@ -22,8 +22,3 @@ Position
 
 Visit: https://sakibb7.github.io/01-Shoe-Website/
 
-
-tutorial followed : 
----------------------------------
-
-https://www.youtube.com/watch?v=G3e-cpL7ofc
