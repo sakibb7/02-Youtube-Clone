@@ -17,8 +17,3 @@ Flexbox
 Grid
 Position
 
-
-
-
-Visit: https://sakibb7.github.io/01-Shoe-Website/
-
